@@ -53,7 +53,7 @@ export function FormPopover ({
       </PopoverTrigger>
       <PopoverContent
         align={align}
-        className="w-80 pt-3"
+        className="w-80 pt-3 bg-list"
         side={side}
         sideOffset={sideOffset}
       >
@@ -75,6 +75,7 @@ export function FormPopover ({
             <FormInput
               id="title"
               label="Board title"
+              className="border-transparent bg-slate-500"
               type="text"
               errors={fieldErrors}
             />

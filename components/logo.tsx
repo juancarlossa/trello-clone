@@ -7,6 +7,9 @@ const Logo = () => {
   return (
     <Link href="/">
       <div className="items-center hover:opacity-75 transition gap-x-2 hidden md:flex">
+        <p className="font-extralight font-mono">
+          Juank App
+        </p>
         <Image
           src="/favicon.ico"
           alt="logo"

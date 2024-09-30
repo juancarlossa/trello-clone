@@ -35,12 +35,12 @@ export default function ListHeader ({ data, onAddCard }: ListHeaderProps) {
 
   const { execute } = useAction(updateList, {
     onSuccess: (data) => {
-      toast.success(`Renamed to "${data.title}"`)
+      toast.success(`Renamed to "${data.title}"`, { className: 'toast' })
       setTitle(data.title)
       disableEditing()
     },
     onError: (error) => {
-      toast.error(error)
+      toast.error(error, { className: 'toast' })
     }
   })
 
@@ -85,7 +85,7 @@ export default function ListHeader ({ data, onAddCard }: ListHeaderProps) {
             placeholder="Enter list title"
             defaultValue={title}
             className="text-sm px-[7px] py-1 h-7 font-medium border-transparent hover:border-input focus:border-input
-            transition truncate bg-transparent focus:bg-white"
+            transition truncate bg-transparent focus:bg-list"
           />
           <button type="submit" hidden />
         </form>

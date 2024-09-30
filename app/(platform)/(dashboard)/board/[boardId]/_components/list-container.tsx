@@ -29,16 +29,16 @@ export function ListContainer ({ data, boardId }: ListContainerProps) {
 
   const { execute: executeUpdateListOrder } = useAction(updateListOrder, {
     onSuccess: () => {
-      toast.success("List reordered")
+      toast.success("List reordered", { className: 'toast' })
     },
     onError: (error) => {
-      toast.error(error)
+      toast.error(error, { className: 'toast' })
     }
   })
 
   const { execute: executeUpdateCardOrder } = useAction(updateCardOrder, {
     onSuccess: () => {
-      toast.success("Card reordered")
+      toast.success("Card reordered", { className: 'toast' })
     },
     onError: (error) => {
       toast.error(error)

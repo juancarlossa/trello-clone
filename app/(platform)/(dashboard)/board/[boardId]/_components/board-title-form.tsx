@@ -15,12 +15,12 @@ interface BoardTitleFormProps {
 export function BoardTitleForm ({ data }: BoardTitleFormProps) {
   const { execute } = useAction(updateBoard, {
     onSuccess: (data) => {
-      toast.success(`Board "${data.title}" updated!`)
+      toast.success(`Board "${data.title}" updated!`, { className: 'toast' })
       setTitle(data.title)
       disableEditing()
     },
     onError: (error) => {
-      toast.error(error)
+      toast.error(error, { className: 'toast' })
     }
   })
   const formRef = useRef<ElementRef<"form">>(null)

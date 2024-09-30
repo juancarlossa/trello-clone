@@ -56,7 +56,7 @@ export default function Actions ({ data }: { data: CardWithList }) {
   return (
     <div className="space-y-2 mt-2">
       <p className="text-xs font-semibold">
-        actION
+        Actions
       </p>
       <Button
         onClick={onCopy}

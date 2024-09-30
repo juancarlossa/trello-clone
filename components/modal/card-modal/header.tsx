@@ -66,7 +66,7 @@ export default function Header ({ data }: { data: CardWithList }) {
             id="title"
             defaultValue={title}
             className="font-semibold text-xl px-1 text-neutral-700 bg-transparent border-transparent
-            relative -left-1.5 w-[95%] focus-visible:bg-white focus-visible:boder-input mb-0.5 truncate"
+            relative -left-1.5 w-[95%] focus-visible:bg-card focus-visible:boder-input mb-0.5 truncate"
           />
         </form>
         <p className="text-sm text-muted-foreground">

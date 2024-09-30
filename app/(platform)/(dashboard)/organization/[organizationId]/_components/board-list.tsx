@@ -57,7 +57,7 @@ export default async function BoardList () {
             <Hint
               sideOffset={40}
               description={
-                `Free workspaces cos tam cos tam up to 5 boards`
+                `Free workspaces up to 5 boards`
               }>
               <HelpCircle className="absolute bottom-2 right-2 h-[14px] w-[14px]" />
             </Hint>

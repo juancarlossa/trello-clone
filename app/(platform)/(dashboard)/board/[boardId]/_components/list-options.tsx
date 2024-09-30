@@ -23,7 +23,7 @@ export default function ListOptions ({ data, onAddCard }: ListOptionsProps) {
 
   const { execute: executeDelete } = useAction(deleteList, {
     onSuccess: (data) => {
-      toast.success(`List "${data.title}" deleted`)
+      toast.success(`List "${data.title}" deleted`, { className: 'toast' })
       closeRef.current?.click()
     },
     onError: (error) => {
@@ -33,7 +33,7 @@ export default function ListOptions ({ data, onAddCard }: ListOptionsProps) {
 
   const { execute: executeCopy } = useAction(copyList, {
     onSuccess: (data) => {
-      toast.success(`List "${data.title}" copied`)
+      toast.success(`List "${data.title}" copied`, { className: 'toast' })
       closeRef.current?.click()
     },
     onError: (error) => {
@@ -62,7 +62,7 @@ export default function ListOptions ({ data, onAddCard }: ListOptionsProps) {
           <MoreHorizontal className="h-4 w-4" />
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="px-0 pt-3 pb-3" side="bottom" align="start">
+      <PopoverContent className="bg-list px-0 pt-3 pb-3" side="bottom" align="start">
         <div className="text-sm font-medium text-center text-neutral-600 pb-4">
           List actions
         </div>
