@@ -79,13 +79,10 @@ body,
 
   .dark {
     p, button, div, input, svg, span, label, h1, h2, h3, h4 {
-      @apply text-white
+      @apply text-white;
     }
     button {
       @apply bg-slate-800;
-      .sidebar-button {
-        @apply bg-white;
-      }
     }
     button:hover {
       @apply bg-slate-600
