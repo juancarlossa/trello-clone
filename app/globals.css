@@ -77,6 +77,10 @@ body,
     --item: 15 23 42 !important;
   }
 
+  .cl-userButtonPopoverMain {
+    background-color: white;
+    background: white;
+  }
   .dark {
     p, button, div, input, svg, span, label, h1, h2, h3, h4 {
       @apply text-white;
@@ -92,18 +96,35 @@ body,
       @apply bg-slate-900
     }
     
-    .cl-organizationSwitcherPopoverFooter, .cl-userPreview, .cl-userButtonPopoverCard, .cl-userButtonPopoverFooter {
+    .cl-modalContent, .cl-card, .cl-cardBox, .cl-createOrganization-root, .cl-cardBox, .cl-signUp-start, .cl-organizationSwitcherPopoverFooter, .cl-userPreview, .cl-userButtonPopoverCard, .cl-userButtonPopoverFooter, .cl-cardBox, .cl-signIn-start, .cl-footer {
+
       background: rgb(30 41 59);
       background-color: rgb(30 41 59);
-    }
 
+      .cl-formFieldInput {
+        @apply bg-slate-600;
+      }
+      .cl-formButtonPrimary {
+        @apply bg-card;
+        box-shadow: none;
+      }
+      a {
+        color: white;
+      }
+      .cl-internal-1dauvpw, .cl-internal-piyvrh, .cl-internal-1hp5nqm {
+        @apply hidden;
+      }
+    }
     .toast {
       @apply bg-black;
-    }
-    
+    } 
   }
 }
 
+.cl-internal-1dauvpw, .cl-internal-piyvrh, .cl-internal-1hp5nqm {
+  @apply hidden;
+
+}
 
 @layer base {
   * {

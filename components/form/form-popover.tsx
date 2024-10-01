@@ -75,7 +75,7 @@ export function FormPopover ({
             <FormInput
               id="title"
               label="Board title"
-              className="border-transparent bg-slate-500"
+              className=""
               type="text"
               errors={fieldErrors}
             />

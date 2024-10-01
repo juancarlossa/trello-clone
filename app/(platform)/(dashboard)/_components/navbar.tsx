@@ -41,6 +41,7 @@ export default function Navbar () {
                   width: 30,
                 },
                 organizationSwitcherPopoverMain: "bg-list",
+                cardBox: "bg-list",
                 rootBox: {
                   display: "flex",
                   justifyContent: "center",
@@ -57,9 +58,7 @@ export default function Navbar () {
                   height: 30,
                   width: 30,
                 },
-                userButtonPopoverMain: {
-                  backgroundColor: "rgb(30 41 59)",
-                }
+                userButtonPopoverMain: "bg-list"
               }
             }}
           />

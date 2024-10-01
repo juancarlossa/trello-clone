@@ -17,6 +17,7 @@ const handler = async (data: InputType): Promise<ReturnType> => {
       error: "Unauthorized"
     }
   }
+  
   const { id, boardId, ...values } = data
   let card 
 
@@ -34,7 +35,7 @@ const handler = async (data: InputType): Promise<ReturnType> => {
         ...values,
       }
     })
-
+    
     await createAuditLog({
       entityTitle: card.title,
       entityId: card.id,

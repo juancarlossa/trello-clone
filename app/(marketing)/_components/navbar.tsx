@@ -11,6 +11,7 @@ import {
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
+import { ModeToggle } from "@/components/ui/ModeToggle"
 
 export function Navbar ({ className }: { className?: string }) {
   return (
@@ -40,7 +41,7 @@ export function Navbar ({ className }: { className?: string }) {
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
-
+        <ModeToggle />
       </NavigationMenuList>
     </NavigationMenu>
   )
